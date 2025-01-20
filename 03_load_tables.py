@@ -1,3 +1,4 @@
+# %%
 import os
 import numpy as np
 import pandas as pd
@@ -11,10 +12,10 @@ from dl import authClient as ac
 
 import warnings
 warnings.filterwarnings("ignore")
-
+# %%
 token = ac.login(os.getenv('DATALAB_LOGIN'), os.getenv('DATALAB_PASSWORD'))
 token
-
+# %%
 # The default endpoint points to the entire public Astro Data Archive
 DEF_ACCESS_URL = "https://datalab.noirlab.edu/sia"
 svc = sia.SIAService(DEF_ACCESS_URL)
